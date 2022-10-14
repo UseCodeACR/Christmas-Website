@@ -1312,7 +1312,7 @@ select.form-control:not([size]):not([multiple]){
 
 .footer-box {
     background: #ccc;
-    padding: 20px 0;\
+    padding: 20px 0;
 }
 
 .footer-box .footer-company-name {
@@ -1331,8 +1331,7 @@ select.form-control:not([size]):not([multiple]){
     text-decoration: underline !important;
 }
 
-.footer-box .footer-company-name a:hover {
-    color: #e91327;
+.footer-box .footer-company-name a:hover {    color: #e91327;
 }
 
 
@@ -1456,7 +1455,10 @@ p {
 }
 
 
-
+#demo{
+    font-size: 4.5em !important;
+    
+}
 
 
 
