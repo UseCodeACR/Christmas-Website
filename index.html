@@ -169,55 +169,49 @@
 			<div class="row">
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" id="change-game" alt="" />
-						<figcaption>
-							<h2>Deal One</h2>
-							<a href="images/pc2.jpg">View more</a>
+						<img src="images/pc1.jpg" id="change-game1" alt="" />
+						<figcaption onclick=flip(1)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" alt="" />
-						<figcaption>
-							<h2>Deal Two</h2>
-							<a href="#">View more</a>
+						<img src="images/pc1.jpg" id="change-game2" alt="" />
+						<figcaption onclick=flip(2)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" alt="" />
-						<figcaption>
-							<h2>Deal Three</h2>
-							<a href="#">View more</a>
+						<img src="images/pc1.jpg" id="change-game3" alt="" />
+						<figcaption onclick=flip(2)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" alt="" />
-						<figcaption>
-							<h2>Deal Four</h2>
-							<a href="#">View more</a>
+						<img src="images/pc1.jpg" id="change-game4" alt="" />
+						<figcaption onclick=flip(2)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" alt="" />
-						<figcaption>
-							<h2>Deal Four</h2>
-							<a href="#">View more</a>
+						<img src="images/pc1.jpg" id="change-game5" alt="" />
+						<figcaption onclick=flip(2)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
 				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/pc1.jpg" alt="" />
-						<figcaption>
-							<h2>Deal Four</h2>
-							<a href="#">View more</a>
+						<img src="images/pc1.jpg" id="change-game6" alt="" />
+						<figcaption onclick=flip(2)>
+							<h2>Flip</h2>
 						</figcaption>
 					</figure>
 				</div>
@@ -529,8 +523,8 @@
 
 
 
-		function changeImage() {
-            var image = document.getElementById('change-game');
+		function flip(num) {
+            var image = document.getElementById('change-game'+num);
             if (image.src.match("colours")) {
                 image.src = "images/pc1.png";
             }
