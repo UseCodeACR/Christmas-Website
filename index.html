@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Christmas - Responsive HTML5 Template</title>  
+    <title>Santa HQ</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -49,7 +49,7 @@
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+				<h2> <b>Chritstmas In:</b> </h2><h2 class="text-dark" id="nav-time"></h2>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
 					<span></span>
@@ -58,8 +58,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                     <ul class="navbar-nav">
                         <li><a class="nav-link active" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#wish">Wish</a></li>
-                        <li><a class="nav-link" href="#b-deals">Best deals</a></li>
+                        <li><a class="nav-link" href="#santa">Track Santa</a></li>
+						<li><a class="nav-link" href="#countdown">Coutndown</a></li>
+                        <li><a class="nav-link" href="#game">Game</a></li>
 						<li><a class="nav-link" href="#donate">Donate</a></li>
                         <li><a class="nav-link" href="#testi">Testimonial</a></li>
 						<li><a class="nav-link" href="#contact">Contact</a></li>
@@ -83,14 +84,14 @@
 	</div>
 	<!-- End Banner -->
 	
-	<!-- wish -->
-	<div id="wish" class="about-box" style="padding-bottom: 0;">
+	<!-- Santa Radar -->
+	<div id="santa" class="about-box" style="padding-bottom: 0;">
 		<div class="about-a1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="title-box">
-							<h2>Best Wishes</h2>
+							<h2>Santa Radar</h2>
 						</div>
 					</div>
 				</div>
@@ -105,27 +106,38 @@
 							</div>
 
                               <div class="col-lg-6 col-md-6 col-sm-12">
-								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Harry Mike Wishes</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown..</p>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
-								<a href="#" class="hvr-radial-out button-theme">Read More</a>
+								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Track Santa</h2>
+								<p>If you would like to track Santa click below, he starts on the 1ST December make sure to come back!!</P>
+								<a href="https://www.noradsanta.org/en/" class="hvr-radial-out button-theme">Click Here</a>
 							</div>
-
 						</div>
 					</div>
 				</div>
 			</div>
 		</div> 
+	</div>
+<!-- santa radar -->
+
+<!-- countdown -->
+	<div id="countdown" class="about-box" style="padding-bottom: 0;">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>Countdown To Chistmas</h2>
+						</div>
+					</div>
+				</div>
 		<div class="about-a1" style="background:#f7f7f7;margin-top: 50px;padding-top: 75px;padding-bottom: 50px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="row align-items-center about-main-info">
 						
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Jonh Max Wishes</h2>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown..</p>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Count Down To Christmas</h2>
+								<p class="text-dark" id="demo"></p>
 								<a href="#" class="hvr-radial-out button-theme">Read More</a>
 							</div>
 
@@ -141,56 +153,70 @@
 			</div>
 		</div>
 	</div>
-	<!-- wish us -->
+	<!-- countdown -->
 	
-	<!-- best deals -->
-	<div id="b-deals" class="services-box main-timeline-box">
+	<!-- santa game -->
+	<div id="game" class="services-box main-timeline-box">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="title-box">
-						<h2>Best Deals</h2>
+						<h2>Find Santa</h2>
 					</div>
 				</div>
 			</div>
 			
 			<div class="row">
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/d1.png" alt="" />
+						<img src="images/pc1.jpg" id="change-game" alt="" />
 						<figcaption>
 							<h2>Deal One</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-							<a href="#">View more</a>
+							<a href="images/pc2.jpg">View more</a>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/d2.png" alt="" />
+						<img src="images/pc1.jpg" alt="" />
 						<figcaption>
 							<h2>Deal Two</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/d3.png" alt="" />
+						<img src="images/pc1.jpg" alt="" />
 						<figcaption>
 							<h2>Deal Three</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
 				</div>
-				<div class="col-lg-6 col-sm-6">
+				<div class="col-lg-4 col-sm-4">
 					<figure class="effect-service">
-						<img src="images/d4.png" alt="" />
+						<img src="images/pc1.jpg" alt="" />
 						<figcaption>
 							<h2>Deal Four</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+							<a href="#">View more</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 col-sm-4">
+					<figure class="effect-service">
+						<img src="images/pc1.jpg" alt="" />
+						<figcaption>
+							<h2>Deal Four</h2>
+							<a href="#">View more</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-lg-4 col-sm-4">
+					<figure class="effect-service">
+						<img src="images/pc1.jpg" alt="" />
+						<figcaption>
+							<h2>Deal Four</h2>
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
@@ -200,7 +226,7 @@
 			
 		</div>
 	</div>
-	<!-- best deals -->
+	<!-- santa game -->
 
 	<!-- donate -->
 	<div id="donate" class="gallery-box" style="background: #f7f7f7;"> 
@@ -442,7 +468,77 @@
 	<!-- End Footer -->
 	
 	<a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+	<script>
+		// Set the date we're counting down to
+		var countDownDate = new Date("Dec 24, 2022 23:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get today's date and time
+		  var now = new Date().getTime();
+			
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate - now;
+			
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			
+		  // Output the result in an element with id="demo"
+		  var text = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+		  document.getElementById("demo").innerHTML = text.bold();
+			
+		  // If the count down is over, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
 
+		// Set the date we're counting down to
+		var countDownDate = new Date("Dec 24, 2022 23:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		// Get today's date and time
+		var now = new Date().getTime();
+			
+		// Find the distance between now and the count down date
+		var distance = countDownDate - now;
+		
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		// Output the result in an element with id="demo"
+		var text = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+		document.getElementById("nav-time").innerHTML = text.bold();
+		
+		// If the count down is over, write some text 
+		if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("nav-time").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+
+
+
+		function changeImage() {
+            var image = document.getElementById('change-game');
+            if (image.src.match("colours")) {
+                image.src = "images/pc1.png";
+            }
+            else {
+                image.src = "images/w1.png";
+            }
+        }
+		</script>
 	<!-- ALL JS FILES -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
