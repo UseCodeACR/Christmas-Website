@@ -137,7 +137,7 @@
 						
                             <div class="col-lg-6 col-md-6 col-sm-12 ">
 								<h2><img style="width: 60px;" src="images/head_s.png" alt="#" /> Count Down To Christmas</h2>
-								<p class="text-dark" id="demo"></p>
+								<h1 class="text-dark" id="demo"></h1>
 								<a href="#" class="hvr-radial-out button-theme">Read More</a>
 							</div>
 
@@ -217,7 +217,9 @@
 				</div>
 				
 			</div>
-			
+			<div class="submit-button text-center">
+				<button class="btn btn-common" id="reset" onclick=replay() >Replay</button>
+			</div>
 		</div>
 	</div>
 	<!-- santa game -->
@@ -493,7 +495,7 @@
 		}, 1000);
 
 		// Set the date we're counting down to
-		var countDownDate = new Date("Dec 24, 2022 23:00:00").getTime();
+		var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime();
 		
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -530,7 +532,7 @@
 		randomImage[2] = "images/snowman-card-back.png";  
 		randomImage[3] = "images/present-card-back.png";  
 		randomImage[4] = "images/snowman-card-back.png";  
-		randomImage[5] = "images/snowman-card-back.png";  
+		randomImage[5] = "images/raindeer-card-back.png";  
 
 		let shuffledImages = randomImage.sort(function () {
 			return Math.random() - 0.5;
@@ -548,14 +550,21 @@
 
 		function flip(num) {
             var image = document.getElementById('change-game'+num);
-            if (image.src.match("colours")) {
-                image.src = "images/pc1.png";
-            }
-            else {
+            if (image.src.match("images/pc1.jpg")) {
                 getRandomImage(num)
             }
+ 
         }
-
+		
+		function replay() {
+			for (let i = 0; i < 6; i++)
+			{
+				document.getElementById("change-game"+i).src = "images/pc1.jpg"
+				let shuffledImages = randomImage.sort(function () {
+				return Math.random() - 0.5;
+			});
+			}
+		}
 		</script>
 		
 	<!-- ALL JS FILES -->
