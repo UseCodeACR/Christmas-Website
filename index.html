@@ -547,9 +547,19 @@
             var image = document.getElementById('change-game'+num);
             if (image.src.match("images/pc1.jpg")) {
                 getRandomImage(num)
+			if (image.src.match("images/santa-card-back.png")){
+					for (let i = 0; i < 6; i++)
+					{
+						document.getElementById("change-game"+i).src = "images/pc2.png";
+					}
+					if (!document.getElementById("change-game"+1).endsWith("santa-card-back.png")){
+						document.getElementById("change-game"+1).src = "images/santa-card-back.png";
+						}
+				}
             }
- 
-        }
+		}
+		
+        
 		
 		function replay() {
 			for (let i = 0; i < 6; i++)
