@@ -84,7 +84,7 @@ function flip(num) {
         if (image.src.match("images/santa-card-back.png")) {
             for (let i = 0; i < 6; i++) {
                 if (num != i) {
-                    document.getElementById("change-game"+i).src = "images/pc2.png";
+                    document.getElementById("change-game"+i).src = "images/trophy-card.png";
                 }
                 
             }
