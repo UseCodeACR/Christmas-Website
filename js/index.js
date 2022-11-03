@@ -93,7 +93,6 @@ function flip(num) {
 }
 
 
-
 function replay() {
     for (let i = 0; i < 6; i++)
     {
@@ -103,3 +102,9 @@ function replay() {
     });
     }
 }
+
+//--------------------------------------------------
+
+var randNum = (Math.floor(Math.random() * 5) + 1);
+document.getElementById("template").src = "images/templates/template-"+randNum+".png";
+document.getElementById("template1").href = "images/templates/template-"+randNum+".png";
